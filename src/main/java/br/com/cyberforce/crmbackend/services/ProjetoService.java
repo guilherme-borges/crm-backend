@@ -16,4 +16,8 @@ public class ProjetoService {
     public List<Projeto> buscarTodos() {
         return projetoRepository.findAll();
     }
+
+    public Projeto salvar(Projeto projeto) {
+        return projetoRepository.save(projeto);
+    }
 }
